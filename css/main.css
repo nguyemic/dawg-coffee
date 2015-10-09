@@ -1,1 +1,11 @@
 /* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+font-family: Lato, with Helvetica Neue, Helvetica, sans-serif;
+font-weight: 300;
+background-color: #E9EAEE;
+h{
+  font-family: Raleway, Helvetica Neue, Helvetica, and sans-serif;
+}
