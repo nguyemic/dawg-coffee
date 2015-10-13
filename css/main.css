@@ -1,66 +1,190 @@
 /* Your stylesheet goes here */
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
-font-weight: 300;
-font-size: 16px;
-background-color: #E9EAEE;
 
-h1,h2,h3,h4,h5,h6{
-  font-family: Raleway, Helvetica Neue, Helvetica, and sans-serif;
+body {
+  font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #E9EAEE;
 }
 
-h2{
-  color:#BC6026;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif
 }
 
-svg{
+h2 {
+  color: #BC6026;
+}
+
+nav svg {
   height: 1em;
-  fill:#D87E28;
+  fill: currentColor;
+  margin-left: 15px;
 }
 
-nav{
-  position:fixed;
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #181C22;
+}
+
+nav ul {
+  padding-left: 0px;
+}
+
+.nav-link {
   color: white;
   font-size: 16px;
-  margin-left: 15px;
   display: inline;
   padding: 0.5em;
   font-variant: small-caps;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
-head{
-  padding-top:3em;
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+  color: #D87E28;
 }
 
-@media(min-width: 768px){
+#header {
+  padding-top: 3em;
+}
+
+#header p, #headline svg {
+  display: none;
+}
+
+#headline {
+  font-style: italic;
+  text-align: left;
+}
+
+#cafe {
+  background-color: #dbdce3;
+}
+
+#cafe img {
+  border-radius: 5px;
+}
+
+#cafe svg {
+  fill: #D87E28;
+  height: 2em;
+  padding-top: 10px;
+}
+
+#cafe i {
+  color: black;
+}
+
+#menu dd {
+  font-style: italic;
+  text-indent: 1em;
+}
+
+#story {
+  background-color: #dbdce3;
+}
+
+#story img {
+  max-height: 300px;
+  margin-left: 1em;
+  float: right;
+  border-radius: 5px;
+}
+
+#footer {
+  border-top: solid #D87E28;
+  padding-top: 1em;
+  background-color: #afb3c2;
+  font-size: 12px;
+  clear: both;
+}
+
+@media (min-width: 768px) {
   body {
-    font-size: 20px;    /* increase font size to 18 pixels on larger screens */
+    font-size: 20px;
   }
-  nav{
-    background-color: rgba(24, 28, 34, 0.8);
-    padding: 1em;
-  }
-  head(max-height: 550px){
-    background-color: <img src="./img/background-sm.jpg" width: 100% height:100%;>;
-    color:white;
-    text-align:right;
-  }
-}  
 
-@media(min-width:992px){
-  head{
-    background-color:<img src="./img/background-md.jpg" width: 100% height:100%;>;
-    font-size: 4em;
+  h2 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  nav {
+    background-color: rgba(24, 28, 34, 0.8);
+  }
+
+  .nav-link {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+  }
+
+  #header {
+    background-image: url('../img/background-sm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%; 
+    text-align: right;
+    color: white;
+    min-height: 550px;
+  }
+
+  #header h1 {
+    font-size: 2em;
+  }
+
+  #header p {
+    display: inherit;
+  }
+
+  #headline svg {
+    display: block;
+    margin: auto;
+  }
+
+  #headline svg {
+    height: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 3em;
+    fill: #D87E28;
+    vertical-align: center;
+  }
+
+  #headline p {
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  #story img {
+    max-height: 400px;
+  }
+
+  #info {
+    text-align: right;
   }
 }
 
-@media(min-width: 1200px){
-   head{
-    background-color:<img src="./img/background-md.jpg" width: 100% height:100%;>;
+@media (min-width: 992px) {
+  #header {
+    background-image: url('../img/background-md.jpg');
   }
-  
+
+  #header h1 {
+    font-size: 4em;
+  } 
+}
+
+@media (min-width: 1200px) {
+  #header {
+    background-image: url('../img/background-lg.jpg');
+  }
 }
