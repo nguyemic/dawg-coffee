@@ -1,15 +1,66 @@
 /* Your stylesheet goes here */
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
-@font-family url(https://fonts.googleapis.com/css?family=Raleway:400,300);
-@font-family url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
-@font-family url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
 font-weight: 300;
+font-size: 16px;
 background-color: #E9EAEE;
-font-family: Raleway, Helvetica Neue, Helvetica, and sans-serif;
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Raleway, Helvetica Neue, Helvetica, and sans-serif;
+}
+
 h2{
   color:#BC6026;
 }
+
 svg{
+  height: 1em;
+  fill:#D87E28;
+}
+
+nav{
+  position:fixed;
+  background-color: #181C22;
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  display: inline;
+  padding: 0.5em;
+  font-variant: small-caps;
+}
+
+head{
+  padding-top:3em;
+}
+
+@media(min-width: 768px){
+  body {
+    font-size: 20px;    /* increase font size to 18 pixels on larger screens */
+  }
+  nav{
+    background-color: rgba(24, 28, 34, 0.8);
+    padding: 1em;
+  }
+  head(max-height: 550px){
+    background-color: <img src="./img/background-sm.jpg" width: 100% height:100%;>;
+    color:white;
+    text-align:right;
+  }
+}  
+
+@media(min-width:992px){
+  head{
+    background-color:<img src="./img/background-md.jpg" width: 100% height:100%;>;
+    font-size: 4em;
+  }
+}
+
+@media(min-width: 1200px){
+   head{
+    background-color:<img src="./img/background-md.jpg" width: 100% height:100%;>;
+  }
   
 }
