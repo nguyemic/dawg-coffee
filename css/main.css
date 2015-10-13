@@ -19,12 +19,6 @@ h2 {
   color: #BC6026;
 }
 
-nav svg {
-  height: 1em;
-  fill: currentColor;
-  margin-left: 15px;
-}
-
 nav {
   position: fixed;
   z-index: 1;
@@ -32,6 +26,12 @@ nav {
   left: 0;
   width: 100%;
   background-color: #181C22;
+}
+
+nav svg {
+  height: 1em;
+  fill: currentColor;
+  margin-left: 15px;
 }
 
 nav ul {
